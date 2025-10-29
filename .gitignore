@@ -1,0 +1,28 @@
+# Virtual environment
+excel_env/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDEs
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Excel / large binary files (uncomment if you don't want to push data files)
+# data/
+# *.xlsx
