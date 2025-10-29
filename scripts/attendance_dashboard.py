@@ -34,9 +34,9 @@ st.markdown("""
 # Load the data
 @st.cache_data
 def load_data():
-    base_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-    attendance_df = pd.read_csv(os.path.join(base_path, 'Employee_Attendance_Clean.csv'))
-    employee_df = pd.read_excel(os.path.join(base_path, 'Employees_Master_Clean.xlsx'))
+    # Use relative path from the repository root
+    attendance_df = pd.read_csv('Employee_Attendance_Clean.csv')
+    employee_df = pd.read_excel('Employees_Master_Clean.xlsx')
     
     # Convert date to datetime
     attendance_df['Date'] = pd.to_datetime(attendance_df['Date'])
